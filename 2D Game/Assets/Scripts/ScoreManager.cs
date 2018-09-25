@@ -13,8 +13,7 @@ public class ScoreManager : MonoBehaviour {
 		// Use this for initialization
 		void Start () {
 			ScoreText1 = GetComponent<Text>();
-
-			Score = 0
+			Score = 0;
 		}
 
 		void Update () {
@@ -23,6 +22,12 @@ public class ScoreManager : MonoBehaviour {
 
 			ScoreText1.text = " " + Score;
 		}
-		
-	}
+
+		public static void AddPoints (int PointsToAdd) {
+			Score += PointsToAdd;
+		}
+
+	// public static void Reset () {
+	// Score=0;
+	//}
 }
