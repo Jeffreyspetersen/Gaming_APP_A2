@@ -969,7 +969,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1114,7 +1114,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00000059604645, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1125,7 +1125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5, y: 5.12}
+  m_Size: {x: 5.1153193, y: 5.12}
   m_EdgeRadius: 0
 --- !u!212 &423469889
 SpriteRenderer:
@@ -1179,11 +1179,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423469886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6, y: -2.91, z: 0.003965785}
+  m_LocalPosition: {x: -3.28, y: -2.89, z: 0}
   m_LocalScale: {x: 0.11450406, y: 0.24923299, z: 0.020535303}
   m_Children:
-  - {fileID: 1071402384}
   - {fileID: 519420032}
+  - {fileID: 1071402384}
   - {fileID: 398432693}
   - {fileID: 1594495736}
   - {fileID: 1712721619}
@@ -1382,8 +1382,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 495628649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.468, y: -2.9, z: 0}
-  m_LocalScale: {x: 6.0547366, y: 0.43537527, z: 1.29}
+  m_LocalPosition: {x: -2.468, y: -2.987, z: 0}
+  m_LocalScale: {x: 5.449263, y: 0.43537527, z: 1.29}
   m_Children:
   - {fileID: 1865853106}
   m_Father: {fileID: 0}
@@ -1456,11 +1456,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4, y: 6.53, z: -487.15936}
+  m_LocalPosition: {x: -0.0059925276, y: 6.53, z: -487.15936}
   m_LocalScale: {x: 0, y: 4.814772, z: 0}
   m_Children: []
   m_Father: {fileID: 423469890}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564583453
 GameObject:
@@ -2089,7 +2089,7 @@ Prefab:
     - target: {fileID: 198209026757146404, guid: 0fbf6fce08f6b4537b8c01a0330458c7,
         type: 2}
       propertyPath: ShapeModule.radiusThickness
-      value: 1.0000
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0fbf6fce08f6b4537b8c01a0330458c7, type: 2}
@@ -2155,7 +2155,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 912640765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.24, y: -10.5, z: 0.3881154}
+  m_LocalPosition: {x: 1.14, y: -11.32, z: 0.3881154}
   m_LocalScale: {x: 365.23355, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2399,7 +2399,7 @@ Transform:
   m_LocalScale: {x: 0.0014960361, y: 0.004932884, z: 0.00646935}
   m_Children: []
   m_Father: {fileID: 423469890}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1105515518
 GameObject:
@@ -2495,7 +2495,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105515518}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3309996, y: -5.334, z: 0.003965785}
+  m_LocalPosition: {x: 1.3309996, y: -5.334, z: 0}
   m_LocalScale: {x: 2.3625567, y: 0.65668315, z: 0.018254632}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2651,7 +2651,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275566233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.3, y: 31.01, z: -0.07629305}
+  m_LocalPosition: {x: 67.3, y: 31.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2779,7 +2779,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1316466510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.54, y: -0.01, z: -0.07629305}
+  m_LocalPosition: {x: -3.54, y: -0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
