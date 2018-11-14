@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour {
 	public GameObject CurrentCheckPoint;
 	public Rigidbody2D Flaco;
 
+	public GameObject Flaco2;
+
 	//Particles
 	public GameObject DeathParticle;
 	public GameObject RespawnParticle;
@@ -23,6 +25,8 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Flaco = FindObjectOfType<Rigidbody2D> ();
+		Flaco = GameObject.Find("Flaco").GetComponent<Rigidbody2D>();
+		Flaco2 = GameObject.Find("Flaco");
 	}
 
 	public void RespawnPlayer(){
@@ -34,6 +38,7 @@ public class LevelManager : MonoBehaviour {
 		Instantiate (DeathParticle, Flaco.transform.position, Flaco.transform.rotation);
 		//Hide Flaco
 		//Flaco.enabled = false;
+		Flaco2.SetActive(false);
 		Flaco.GetComponent<Renderer> ().enabled = false;
 		//Gravity Reset
 		GravityStore = Flaco.GetComponent<Rigidbody2D>().gravityScale;
@@ -51,6 +56,7 @@ public class LevelManager : MonoBehaviour {
 		Flaco.transform.position = CurrentCheckPoint.transform.position;
 		//Show Flaco
 		//Flaco.enabled = true;
+		Flaco2.SetActive(true);
 		Flaco.GetComponent<Renderer> ().enabled = true;
 		//Spawn Flaco
 		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);

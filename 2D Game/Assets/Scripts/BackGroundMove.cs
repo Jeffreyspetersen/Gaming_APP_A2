@@ -23,8 +23,8 @@ public class BackGroundMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(isFollowing){
-			xOffset = Player.GetComponent<Rigidbody2D>().velocity.x / 300;
-			yOffset = Player.GetComponent<Rigidbody2D>().velocity.y / 350;
+			xOffset = Player.GetComponent<Rigidbody2D>().velocity.x / 400;
+			yOffset = Player.GetComponent<Rigidbody2D>().velocity.y / 450;
 			transform.position = new Vector3(transform.position.x + xOffset, transform.position.y + yOffset, transform.position.z);	
 			Debug.Log(xOffset);	
 		}

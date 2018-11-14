@@ -5,7 +5,10 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
-	public Rigidbody2D Flaco;
+
+	public float TimeOut;
+
+	public GameObject Flaco;
 
 	public GameObject EnemyDeath;
 
@@ -15,8 +18,17 @@ public class Projectile : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if(Flaco.transform.localScale.x < 0)
+		Flaco = GameObject.Find("Flaco");
+
+		EnemyDeath = Resources.Load("PreFabs/DeathPS") as GameObject;
+		ProjectileParticle = Resources.Load("PreFabs/RespawnPS") as GameObject;
+
+		if(Flaco.transform.localScale.x < 0);
 		Speed = -Speed;
+
+
+		//Destroys Projectile after X Seconds
+		Destroy(gameObject,TimeOut);
 	}
 	
 	// Update is called once per frame
@@ -31,6 +43,12 @@ public class Projectile : MonoBehaviour {
 			ScoreManager.AddPoints (PointsForKill);
 		}
 
+		//Instantiate(ProjectileParticle, transform.position, transform.rotation);
+		Destroy (gameObject);
+	}
+
+
+	void OnCollisionEnter2D(Collision2D other){
 		Instantiate(ProjectileParticle, transform.position, transform.rotation);
 		Destroy (gameObject);
 	}
