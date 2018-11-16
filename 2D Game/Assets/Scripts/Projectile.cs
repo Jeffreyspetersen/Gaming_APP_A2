@@ -23,8 +23,8 @@ public class Projectile : MonoBehaviour {
 		EnemyDeath = Resources.Load("PreFabs/DeathPS") as GameObject;
 		ProjectileParticle = Resources.Load("PreFabs/RespawnPS") as GameObject;
 
-		if(Flaco.transform.localScale.x < 0);
-		Speed = -Speed;
+		if(Flaco.transform.localScale.x < 0)
+			Speed = -Speed;
 
 
 		//Destroys Projectile after X Seconds

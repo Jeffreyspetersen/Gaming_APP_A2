@@ -67,8 +67,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1413123975055066}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.302, y: -16.2, z: 0}
-  m_LocalScale: {x: 8.109396, y: 0.5850832, z: 1.29}
+  m_LocalPosition: {x: -2.302, y: -22.5, z: 0}
+  m_LocalScale: {x: 8.109396, y: 0.5850832, z: 0}
   m_Children:
   - {fileID: 4363527388463020}
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 35
-  TimeOut: 0
+  TimeOut: 15
   Flaco: {fileID: 0}
   EnemyDeath: {fileID: 0}
   ProjectileParticle: {fileID: 1698992009681080}
