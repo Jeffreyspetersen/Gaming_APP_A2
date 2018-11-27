@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour {
 		Flaco = GameObject.Find("Flaco");
 
 		EnemyDeath = Resources.Load("PreFabs/DeathPS") as GameObject;
-		ProjectileParticle = Resources.Load("PreFabs/RespawnPS") as GameObject;
+		ProjectileParticle = Resources.Load("PreFabs/LazerPS") as GameObject;
 
 		if(Flaco.transform.localScale.x < 0)
 			Speed = -Speed;
